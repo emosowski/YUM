@@ -1,13 +1,13 @@
-<h2>Register an account and start a SnapShort!</h2>
+<h2 id="register">Register an account and start cooking today!</h2>
 
 <%= erb :_errors, locals: {errors: @errors} %>
 
 <div class="comment-form">
 <form class="prompt-form pure-form" method="post" action="/users">
   <fieldset class=".pure-group">
-  <input type="text" name="user[username]" placeholder="Create a Username">
-  <input type="email" name="user[email]" placeholder="Email: email@example.com">
-  <input type="password" name="user[password]" placeholder="Create Password">
+  <input type="text" name="user[username]" placeholder="Create a Username"><br><br>
+  <input type="email" name="user[email]" placeholder="Email@example.com"><br><br>
+  <input type="password" name="user[password]" placeholder="Create Password"><br><br>
   </fieldset>
   <br>
   <button class="create-link" type="submit">Register</button>

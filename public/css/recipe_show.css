@@ -1,0 +1,8 @@
+.remove-bullets{
+  list-style-type: none;
+}
+
+.ingredients-instructions-container{
+  background-color: #F3FEFB;
+  margin-top: 70px;
+}

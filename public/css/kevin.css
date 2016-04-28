@@ -40,6 +40,15 @@
 
 .prompt-form {
   margin: 40px auto;
+  text-align: center;
+}
+
+#login{
+  text-align: center;
+}
+
+#register{
+  text-align: center;
 }
 
 textarea {
@@ -47,8 +56,8 @@ textarea {
 }
 
 .create-link {
-  border: 0.5px solid gray;
-  background-color: orange;
+  border: 0.5px black;
+  background-color: #A9A9A9;
   color: black;
   padding: 5px;
   border-radius: 5px;
@@ -104,7 +113,7 @@ textarea {
 .instructions {
   display: block;
   margin: 20px 0px;
-  background-color: #F5F5F5;
+  background-color: #F3FEFB;
   padding: 10px;
 }
 

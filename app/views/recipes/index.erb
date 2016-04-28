@@ -1,13 +1,13 @@
 <div class="main-page">
-  <a class="create-link push20" href="/prompts/new">Add a new prompt </a>
+  <a class="create-link push20" href="/recipes/new">Add a new recipe </a>
   <div class="all-prompts">
     <% @recipes.each do |recipe| %>
       <div class="prompt-snippet">
         <div class="votes-shorts">
-          <%= recipe.title %><br>
+          <a href="/recipes/<%=recipe.id%>"><%= recipe.title %></a><br>
           <%= recipe.description %><br>
         </div>
-        <span class="creator">Created By: <%= recipe.user_id.email %></span>
+        <span class="creator">Created By: <%= recipe.user.email %></span>
     	</div>
     <% end %>
   </div>
