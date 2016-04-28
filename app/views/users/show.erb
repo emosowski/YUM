@@ -1,20 +1,20 @@
 <h2 class="hey">Hey there, <span class="orange"><%= @user.username %></span>!</h2>
 
-<div class="user-prompts">
-  <h3>Your prompts:</h3>
+<div class="user-recipes">
+  <h3>Your recipes:</h3>
 <ul>
-  <% @user.prompts.each do |prompt| %>
-  	  <a class="user-links" href="/prompts/<%= prompt.id %>"><li><%= prompt.title %></a></li>
+  <% @user.recipes.each do |recipe| %>
+  	  <a class="user-links" href="/recipes/<%= recipe.id %>"><li><%= recipe.title %></a></li>
   <% end %>
 </ul>
 </div>
 
 
-<div class="user-shorts">
-  <h3>Prompts You Have Shorted:</h3>
+<div class="user-recipes">
+  <h3>Recipes You Have Written:</h3>
 <ul>
-  <% @user.shorts.each do |short| %>
-    <a class="user-links" href="/shorts/<%= short.id %>"><li><%= short.prompt.title %></a></li>
+  <% @user.recipes.each do |recipe| %>
+    <a class="user-links" href="/recipes/<%= recipe.id %>"><li><%= recipe.title %></a></li>
   <% end %>
 </ul>
 </div>

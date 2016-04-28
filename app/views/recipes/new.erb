@@ -1,10 +1,10 @@
-<form class="prompt-form pure-form" action="/prompts" method="POST">
+<form class="prompt-form pure-form" action="/recipes" method="POST">
   <fieldset class=".pure-group">
-  <input class="pure-u-1" type="text" name="prompt[title]" placeholder="Title">
+  <input class="pure-u-1" type="text" name="recipe[title]" placeholder="Title">
   <br>
-  <textarea class="pure-u-1" name="prompt[optional]" placeholder="Optional: add additional instructions" id=""></textarea>
-  <input type="hidden" name="prompt[creator_id]" value="<%= @user.id %>">
+  <textarea class="pure-u-1" name="recipe[optional]" placeholder="Optional: add additional instructions" id=""></textarea>
+  <input type="hidden" name="recipe[creator_id]" value="<%= @user.id %>">
   <br>
   </fieldset>
-  <button class="create-link" type="submit">Post Prompt</button>
+  <button class="create-link" type="submit">Post Recipe</button>
 </form>

@@ -21,6 +21,7 @@
   <link rel="stylesheet" href="/css/emily.css">
    <link rel="stylesheet" href="/css/emily_users.css">
   <link rel="stylesheet" href="/css/logo.css">
+  <link rel="stylesheet" href="/css/recipe_show.css">
 
 
 
@@ -33,14 +34,14 @@
   <script src="/js/kevin.js"></script>
 
 
-  <title>SnapShort</title>
+  <title>Recipease</title>
 </head>
 <body>
 
   <header>
     <div class="logo-title">
-    <img class="logo" src="/images/snapshort_logo.png" alt="SnapShort">
-    <a href='/' class="main-title">SnapShort</a>
+    <img class="logo" src="/images/checkmark.png" alt="Recipease">
+    <a href='/' class="main-title">Recipease</a>
   </div>
     <nav>
       <% if logged_in? %>
@@ -50,14 +51,13 @@
         <a class="main-link" href="/login">LOGIN</a>
         <a class="main-link" href="/users/new">REGISTER</a>
       <% end %>
-        <a class="main-link" href="/about">ABOUT</a>
     </nav>
   </header>
   <% if !logged_in? %>
   <div class="welcome-message">
     <br>
 <!--     <h2>Welcome</h2> -->
-    <div class='left-welcome'><p>Short story writing is an art. Doing it in a snap takes a whole different toolset. <br>Hone your skills. Add a prompt, contribute a short, give and receive feedback.<br><span class='orange'> Snapshort is your notepad, what will you create today?</span></p>
+    <div class='left-welcome'><p>Following recipes shouldn't be hard. <br>Track your progress interactively, and never lose your place again.<br><span class='orange'> Recipease is your guide, what will you cook today?</span></p>
     </div>
     <br>
   </div>
