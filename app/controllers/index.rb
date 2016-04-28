@@ -1,3 +1,3 @@
 get '/' do
-  redirect '/prompts'
+  redirect '/recipes'
 end
