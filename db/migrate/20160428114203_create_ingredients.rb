@@ -5,7 +5,7 @@ class CreateIngredients < ActiveRecord::Migration
       t.string :quantity, null: false
       t.string :name, null: false
       t.string :unit
-      t.boolean :status, null: false
+      t.boolean :checked
 
       t.timestamps null: false
     end

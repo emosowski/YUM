@@ -3,7 +3,7 @@ class CreateInstructions < ActiveRecord::Migration
     create_table :instructions do |t|
       t.references :recipe
       t.string :step, null: false
-      t.boolean :status, null: false
+      t.boolean :checked
 
       t.timestamps null: false
     end
