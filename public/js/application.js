@@ -1,12 +1,16 @@
-// $(document).ready(function() {
-//   $('input:checkbox').on('submit', function(event) {
-//     event.preventDefault();
+$(document).ready(function() {
 
-//     var $target - $(event.target);
+  $('form').on('click', 'input:checkbox', function() {
+  var checked = $(this).is(':checked');
 
+    $.ajax({
+        type: "POST",
+        url: $(this).parent().attr('action'),
+        data: { checked : checked },
+        success: function(data) {
 
-//     var request = $.ajax ({
-//       type: "POST"
-//     })
-//   })
-// });
+        console.log("Checked value is: " + checked);
+        }
+      });   // ajax
+    }); // click function
+}); // document ready
