@@ -20,7 +20,7 @@
     <ol class="remove-bullets">
       <% @recipe.ingredients.each do |ingredient| %>
         <li><form action="/recipes/<%=@recipe.id%>/ingredients/<%=ingredient.id%>">
-          <input type="checkbox" name="ingredient" value="<%=ingredient.checked%>" > <%= ingredient.quantity %> <%= ingredient.unit %> <%= ingredient.name %></form></li>
+          <input type="checkbox" name="ingredient" value="ingredient.id" > <%= ingredient.quantity %> <%= ingredient.unit %> <%= ingredient.name %></form></li>
       <% end %>
     </ol>
 
@@ -28,7 +28,7 @@
     <ol class="remove-bullets">
       <% @recipe.instructions.each do |instruction| %>
         <li><form action="/recipes/<%=@recipe.id%>/instructions/<%=instruction.id%>">
-          <input type="checkbox" name="instruction" value="<%=instruction.checked%>" > <%= instruction.step %></form></li>
+          <input type="checkbox" name="instruction" value="instruction.id" > <%= instruction.step %></form></li>
       <% end %>
     </ol>
   </div>
